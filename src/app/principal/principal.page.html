@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+      </ion-col>
+      <ion-col>
+
+        <ion-button expand="block" (click)="setOpena(true)">Adoptar</ion-button>
+        <ion-modal [isOpen]="isModalOpena">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Adoptar</ion-title>
+
+                <ion-icon name="arrow-back-outline" (click)="setOpena(false)"></ion-icon>
+              </ion-toolbar>
+            </ion-header>
+
+            <ion-content>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>Cachupin</ion-card-title>
+                  <img src="https://www.caracteristicas.co/wp-content/uploads/2017/02/perro-1-e1561678907722.jpg" >
+                </ion-card-header>
+                <ion-card-subtitle>Raza: Mestizo</ion-card-subtitle>
+                <ion-card-subtitle>Edad: 5 Años</ion-card-subtitle>
+                <ion-card-subtitle>Sexo: Macho</ion-card-subtitle>
+              </ion-card>
+              <br>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>willy</ion-card-title>
+                  <img src="https://t2.ea.ltmcdn.com/es/posts/3/2/9/curiosidades_del_pastor_aleman_23923_600_square.jpg" >
+                </ion-card-header>
+                <ion-card-subtitle>Raza: Pastor Aleman</ion-card-subtitle>
+                <ion-card-subtitle>Edad: 3 Años</ion-card-subtitle>
+                <ion-card-subtitle>Sexo: Hembra</ion-card-subtitle>
+              </ion-card>
+
+          </ion-content>
+        </ng-template>
+
+
+        </ion-modal>
+      </ion-col>
+      <ion-col>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
